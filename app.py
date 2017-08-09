@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return 'Hello! I am a Flask application'
+    return 'Hello! I am a Flask application\nYay!'
 
 if __name__ == '__main__':
     # Note the extra host argument. If we didn't have it, our Flask app
