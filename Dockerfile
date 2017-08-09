@@ -1,7 +1,7 @@
 FROM ubuntu
 
 RUN apt-get update && \
-	apt-get install python-pip python-dev build-essential
+	apt-get install -y python-pip python-dev build-essential
 
 COPY requirements.txt /usr/src/app
 RUN pip install --no-cache-dir -r /usr/src/app/requirements.txt
